@@ -1,5 +1,11 @@
 require_relative "lib/bin/enviornment"
 
+set title: "Collisions Ruby2D",
+    background: "black",
+    with: 640,
+    height: 480,
+    resizable: false
+
 fps = Text.new(
   get(:fps).to_i,
   size: 16,
@@ -71,5 +77,4 @@ update do
   end
 end
 
-init_window_settings
 show
